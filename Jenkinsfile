@@ -10,6 +10,6 @@ node {
         archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
     }
       properties([
-        [$class: 'CopyArtifactPermissionProperty', projectNames: 'deployjar'],
+        [$class: 'CopyArtifactPermissionProperty', projectNames: '*'],
         pipelineTriggers([])])
 }
