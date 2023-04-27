@@ -7,6 +7,6 @@ node {
         sh "ls ./target" 
     }
     stage('artifact creation'){
-        archiveArtifacts artifacts: './target/*.jar', followSymlinks: false
+        archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
     }
 }
